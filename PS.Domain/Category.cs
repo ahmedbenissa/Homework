@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace PS.Domain
+{
+    public class Category : Concept
+    {
+        public int CategoryId { get; set; }
+        public String Name { get; set; }
+        public IList<Product> Products { get; set; }
+
+        public override void GetDetails()
+        {
+            Console.WriteLine("Name : " + Name);
+        }
+    }
+}
